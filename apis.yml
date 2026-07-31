@@ -1,7 +1,25 @@
 aid: nava
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/nava.png
 name: Nava
-description: 'Nava is a company surfaced as a portfolio company of homebrew and added to the API Evangelist
-  network as a stub for enrichment. Sector: unknown. This profile is a lead awaiting the enrichment pipeline.'
+description: 'Nava (Nava Benefits) is a modern employee benefits brokerage that pairs
+  benefits advisors with AI-powered technology to cut administrative work, simplify
+  renewals, and support employees around the clock. Its HQ platform helps HR teams
+  manage benefits and renewals while an employee app acts as a 24/7 digital benefits
+  concierge for workers and their families, integrating with BenAdmin and carrier
+  systems. Backed by Homebrew, Nava positions itself as an alternative to traditional
+  brokers focused on cost savings and administrative relief. No public developer program,
+  API, or OpenAPI surface is published as of this enrichment pass.'
 url: https://raw.githubusercontent.com/api-evangelist/nava/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -11,10 +29,15 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-20'
 tags:
 - Company
-- Unknown
+- Employee Benefits
+- Insurance
+- Human Resources
+- Benefits Administration
+- Insurtech
+- HR Technology
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -22,5 +45,20 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: DomainSecurity
+  url: security/nava-domain-security.yml
 - type: Website
   url: https://www.navabenefits.com
+- type: Blog
+  url: https://www.navabenefits.com/blog
+- type: GettingStarted
+  url: https://www.navabenefits.com/get-started
+- type: TermsOfService
+  url: https://www.navabenefits.com/website-terms-of-service
+- type: PrivacyPolicy
+  url: https://www.navabenefits.com/privacy-notice
+x-enrichment:
+  date: '2026-07-20'
+  status: nochange
+  artifacts_added: 0
+  pass: local-v1
